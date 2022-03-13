@@ -1,0 +1,14 @@
+[
+    {
+        "title":"wedding image 1",
+        "imgUrl":"images/gallery/slide-1.png"
+    },
+    {
+        "title":"wedding image 2",
+        "imgUrl":"images/gallery/slide-2.png"
+    },
+    {
+        "title":"wedding image 3",
+        "imgUrl":"images/gallery/slide-3.png"
+    }
+]
