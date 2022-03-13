@@ -1,3 +1,6 @@
+let slidingIntervalTime = 2000;
+let sliderIntervalId;
+
 //To display slider images to UI
 const showSlider = (images) => {
     let sliderIndex = 0;
@@ -6,7 +9,7 @@ const showSlider = (images) => {
     const sliderImg = document.getElementById("slider-img");
 
     //This block of code bellow will dynamically set the slider image url
-    setInterval(() => {
+    sliderIntervalId = setInterval(() => {
         if (sliderIndex >= images.length) {
             sliderIndex = 0;
         }
@@ -16,7 +19,22 @@ const showSlider = (images) => {
             sliderContainer.classList.remove('d-none');
             isSliderEnabled = true;
         }
-    }, 2000);
+    }, slidingIntervalTime);
+}
+
+//To set sliding interval
+const setDurationHandler = () => {
+    const intervalInput = document.getElementById('interval-input').value;
+    if (intervalInput) {
+        stopSlidingHandler();
+        slidingIntervalTime = intervalInput * 1000;
+        loadSliderImages();
+    }
+}
+
+//To stop sliding 
+const stopSlidingHandler = () => {
+    clearInterval(sliderIntervalId);
 }
 
 // Loading data 

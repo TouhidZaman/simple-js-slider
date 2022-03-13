@@ -20,6 +20,19 @@
     <section id="slider" class="container d-none">
         <h1 class="mt-5 mb-4 text-center heading">JavaScript Slider App!</h1>
         <div class="slider-container shadow p-3">
+            <div class="slider-actions">
+                <div class="row justify-content-md-center">
+                    <div class="col-8 col-lg-3 mx-auto mx-md-0 mb-3">
+                        <div class="input-group">
+                            <input id="interval-input" type="text" class="form-control" placeholder="Enter sliding interval" aria-describedby="button-addon2">
+                            <button onclick="setDurationHandler()" class="btn btn-outline-secondary fw-bold" type="button" id="button-addon2">Apply</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex justify-content-center justify-content-md-start mb-3">
+                        <button onclick="stopSlidingHandler()" class="btn btn-outline-secondary fw-bold">Stop Sliding</button>
+                    </div>
+                </div>
+            </div>
             <div class="slider-img-container">
                 <img id="slider-img" class="w-100 h-100" alt="slide-image-">
             </div>
