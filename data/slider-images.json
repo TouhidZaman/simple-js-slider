@@ -1,14 +1,16 @@
-[
-    {
-        "title":"wedding image 1",
-        "imgUrl":"images/gallery/slide-1.png"
+[{
+        "id": 1,
+        "title": "wedding image 1",
+        "imgUrl": "images/gallery/slide-1.png"
     },
     {
-        "title":"wedding image 2",
-        "imgUrl":"images/gallery/slide-2.png"
+        "id": 2,
+        "title": "wedding image 2",
+        "imgUrl": "images/gallery/slide-2.png"
     },
     {
-        "title":"wedding image 3",
-        "imgUrl":"images/gallery/slide-3.png"
+        "id": 3,
+        "title": "wedding image 3",
+        "imgUrl": "images/gallery/slide-3.png"
     }
 ]
